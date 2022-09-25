@@ -1,10 +1,9 @@
-import { useState } from "react";
-
-const Filter = () => {
+const Filter = (props) => {
+  
   return (
     <p>
       filter shown with
-      <input value={filterText} onChange={handleFilterChange} />
+      <input value={props.value} onChange={props.onChange} />
     </p>
   );
 };
